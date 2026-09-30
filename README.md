@@ -36,7 +36,11 @@ Responde à pergunta: Como? Com o que? Onde? Quando?)
 # 2. Requisitos
 
 ## • Requisitos funcionais
-(Escreva os requisitos funcionais da aplicação (funcionalidades esperadas, necessidades que devem ser atendidas))
+2.1.1	Grupo de RF 1 
+Coleta Automática via API/Chave:
+O sistema deve integrar-se com a fonte de alimentação de dados (plataforma Davis/nuvem) através de API/chave de autenticação para extrair medições periodicamente sem necessidade de download manual
+contínuo.
+
 
 ## • Requisitos não funcionais
 (Escreva os requisitos não funcionais da aplicação (qualidade))  
