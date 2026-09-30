@@ -42,6 +42,36 @@ Coleta Automática via API/Chave:
 O sistema deve integrar-se com a fonte de alimentação de dados (plataforma Davis/nuvem) através de API/chave de autenticação para extrair medições periodicamente sem necessidade de download manual
 contínuo.
 
+2.1.2	Grupo de RF 2
+Importação Manual de Arquivo (.csv / .xml): 
+Como mecanismo de contingência caso a automação/API falhe ou para carregar períodos específicos, o sistema deve permitir upload manual de arquivos.
+
+2.1.3	Grupo de RF 3  
+Filtragem e Limpeza Automática de Colunas:
+Ao importar o .csv, o sistema deve descartar automaticamente as colunas desnecessárias e persistir apenas as variáveis úteis pré-definidas da estação.
+
+2.1.4	Grupo de RF 4  
+Consolidação e Agregação Temporal: 
+O sistema deve calcular e consolidar automaticamente as métricas por período:
+Agrupamento diário, semanal, mensal e anual.
+Cálculo automático de médias, valores máximos/mínimos e acumulados de precipitação, eliminando a criação manual de planilhas.
+
+2.1.5	Grupo de RF 5  
+Gestão de Parâmetros Climáticos:
+•	Precipitação: Acumulado diário (mm), acumulado mensal (mm) e acumulado anual (mm).
+•	Umidade Relativa do Ar (%): Média diária, valor máximo registrado (com respectivo horário) e valor mínimo registrado (com respectivo horário).
+•	Temperatura do Ar (°C): Média diária, temperatura máxima (com respectivo horário) e temperatura mínima (com respectivo horário).
+•	Sensação Térmica (°C): Máxima (índice de calor com respectivo horário) e mínima (resfriamento pelo vento com respectivo horário).
+•	Pressão Atmosférica (hPa): Média, valor máximo e valor mínimo (corrigidos para o nível do mar).
+•	Vento: Velocidade média (km/h), direção predominante (rosa dos ventos/pontos cardeais), velocidade máxima da rajada de vento (km/h com respectivo horário e direção da rajada).
+•	Extremos Anuais: Registro histórico da temperatura máxima e mínima do ano corrente (com data e hora da ocorrência).
+
+2.1.6	Grupo de RF 6 
+Página Inicial (Dashboard / Visão Geral):
+Exibição das condições atuais (dados em tempo real / última medição disponível).
+Apresentação resumida em cards ou tabelas limpas (inspirado no padrão de estações de referência como a da USP).
+
+
 
 ## • Requisitos não funcionais
 (Escreva os requisitos não funcionais da aplicação (qualidade))  
